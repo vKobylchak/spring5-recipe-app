@@ -7,6 +7,15 @@
 <body>
 <h1>My Recipes! Victory!!</h1>
 
-
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+    </tr>
+    <tr th:each="recipe : ${recipies}">
+        <td th:text="${recipe.id}"></td>
+        <td th:text="${recipe.description}"></td>
+    </tr>
+</table>
 </body>
 </html>
